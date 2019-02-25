@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Crystal Collector</title>
+
+        <!-- <link type= "stylesheet" href= "assets/css/style.css"> -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+        <script src= "assets/javascript/game.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <!-- this is where my heading will go with the game heading that will render in HTML browser-->
+            <h1 class="title">The Crystal Collector</h1>
+
+            <!--This is where I will place the rules of the game for the user to read and will render on HTML in browser-->
+            <h3 class="rules">Rules of the game</h3>
+
+            <p>You will be given a random number at the start of the game.</p>
+
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+
+            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number</p>
+
+            <p>The value of each crystal is hidden from you until your click on it.</p>
+
+            <p>Each time when the game starts, the game will change the values of each crysital.</p>
+
+             <!--This is where I will display the random number display-->
+            <div class="targetScore">
+            </div>
+<br>
+            <!--This is where my wins/losses will be displayed-->
+            <div class="myWins">
+                <p>Wins:</p><span id="theWins">0</span>
+            </div>
+            <div class="myLosses">
+                <p>Losses:</p><span id="theLosses">0</span>
+            </div>
+<br>
+            <!--This is where my crystals will be displayed-->
+            <div class="imgButtons">
+                <button class="crystalButton" id="crystalOne"><img src="assets/images/1510211475145264627.jpg" width="248px" height="203px"></button>
+                <button class="crystalButton" id="crystalTwo"><img src="assets/images/asfassa.jpg" width="248px" height="203px"></button>
+                <button class="crystalButton" id="crystalThree"><img src="assets/images/green.png" width="248px" height="203px"></button>
+                <button class="crystalButton" id="crystalFour"><img src="assets/images/lukas-kohne-mview-image20151115-15929-1jskspj.jpg" width="248px" height="203px"></button>
+            </div>
+<br>
+            <!--This is where the score display will be-->
+            <div class="scoreBoard">
+                <h4>You Scored: <span id="targetScore"></span></h4>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
