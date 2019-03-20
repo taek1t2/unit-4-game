@@ -1,4 +1,10 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-     
+    background-color: #a98855 !important;
+    color: white !important;
+ }
+
+ .ruleContainer {
+     border: white 12px solid;
+     width: 50%;
+     float: right;
  }

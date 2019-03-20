@@ -1,4 +1,5 @@
 //GAME LOGIC, usually JavaScript files//
+
 var randomNum = function(min, max) {
     return Math.floor(Math.random() * max - min) + min;
 
@@ -10,7 +11,7 @@ var userScore = 0;
 var targetScore = randomNum(50, 120);
 
 
-// run this code using jQuery starting with $//
+// initiate to startGame
 function startGame () {
     userScore = 0;
     targetScore = randomNum(50, 120);
@@ -39,7 +40,7 @@ $(document).ready(function() {
         
         userScore += parseInt(crystalNum);
         console.log("user" + userScore);
-        $(".scoreBoard").html("<h2>" + userScore + "</h2>")
+        $(".scoreBoard").html("<h4>" + userScore + "</h4>")
         if (userScore === targetScore) {
             userWins++;
             $("#theWins").text(userWins);

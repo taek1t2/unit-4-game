@@ -2,42 +2,45 @@
 <html>
     <head>
         <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
         <title>Crystal Collector</title>
 
-        <!-- <link type= "stylesheet" href= "assets/css/style.css"> -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-
-        <script src= "assets/javascript/game.js"></script>
 
     </head>
 
     <body>
 
         <div class="container">
-            <!-- this is where my heading will go with the game heading that will render in HTML browser-->
+
             <h1 class="title">The Crystal Collector</h1>
 
-            <!--This is where I will place the rules of the game for the user to read and will render on HTML in browser-->
-            <h3 class="rules">Rules of the game</h3>
+            <div class="ruleContainer">
 
-            <p>You will be given a random number at the start of the game.</p>
+                <div class="instructions">
+                    <!--This is where I will place the rules of the game for the user to read and will render on HTML in browser-->
+                    <h3 class="rules">Rules of the game</h3>
 
-            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                    <p>The goal number is displayed.</p>
 
-            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number</p>
+                    <p>There are four crystals below. Each of these crystals are given random numbers.</p> 
+                    
+                    <p>By clicking on a crystal you will add a specific amount of points to your total score.</p>
 
-            <p>The value of each crystal is hidden from you until your click on it.</p>
+                    <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number</p>
 
-            <p>Each time when the game starts, the game will change the values of each crysital.</p>
+                    <p>Each time when the game starts, the game will change the values of each crysital.</p>
+
+                </div>
+
+            </div>
 
              <!--This is where I will display the random number display-->
-            <div class="targetScore">
-            </div>
+            <div class="targetScore"></div>
 <br>
             <!--This is where my wins/losses will be displayed-->
             <div class="myWins">
@@ -56,11 +59,13 @@
             </div>
 <br>
             <!--This is where the score display will be-->
-            <div class="scoreBoard">
-                <h4>You Scored: <span id="targetScore"></span></h4>
-            </div>
+            <div class="scoreBoard"></div>
 
         </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+        <script src="assets/javascript/game.js"></script>
 
     </body>
 
