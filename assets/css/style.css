@@ -1,10 +1,12 @@
 body {
     background-color: #a98855 !important;
-    color: white !important;
- }
+    color: #52361b !important;
+}
 
- .ruleContainer {
-     border: white 12px solid;
-     width: 50%;
-     float: right;
- }
+#instructions {
+    border: #52361b 10px solid;
+    box-sizing: content-box;
+    width: 50%;
+    float: right;
+    padding: 20px;
+}
