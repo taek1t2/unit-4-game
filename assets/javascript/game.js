@@ -43,14 +43,14 @@ $(document).ready(function() {
         $(".scoreBoard").html("<h4>" + userScore + "</h4>")
         if (userScore === targetScore) {
             userWins++;
-            $("#theWins").text(userWins);
+            $("#theWins").html("<h4>" + userWins + "</h4>");
             userScore = 0;
             startGame();
             console.log("wins" + userScore);
             
         } else if (userScore >= targetScore) {
             userLosses++;
-            $("#theLosses").text(userLosses);
+            $("#theLosses").html("<h4>" + userLosses + "</h4>");
             userScore = 0;
             startGame();
             console.log("lose" + userScore);

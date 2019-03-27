@@ -10,3 +10,7 @@ body {
     float: right;
     padding: 20px;
 }
+
+#scoreSection {
+    border: #52361b 10px solid;
+}
